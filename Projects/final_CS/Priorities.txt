@@ -1,0 +1,27 @@
+Space Game: Feature Priorities
+--------------------------------
+Essentials:
+1. Some upgrades.
+2. Difficulty scaling - basic difficulty scaler which affects almost everything - doesn't need to be perfectly tuned yet.
+2.5 Battle Victory state, which allows access to shops.
+3. Alien spawn system which respawns unkilled aliens that left screen (switch this to win state).
+4. Instructions/Control visual overlay.
+
+High:
+5. Randomize instances.
+6. Limit warp drive usage by time.
+
+Medium:
+7. Make aliens not instantly disappear when warping away (set their y speed to starSpeed, wait a few ticks before resetting entities)- "Leave them behind, delete them once off screen."
+8. Restart button on death screen. Resets everything.
+9. Invulnerability time (upgradable) visualized through flashing player.
+
+Low:
+10. More abilities, more enemies.
+11. Fine tuning of difficulty and upgrades.
+12. Multi-health enemies.
+
+Impossible ):
+13. Bosses.
+14. Competent story, with beginning and end.
+15. Code cleanup.

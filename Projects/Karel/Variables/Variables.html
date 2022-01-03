@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Level 5</title>
+	<link rel="stylesheet" href="data/styles/normalize.css">
+	<link rel="stylesheet" href="data/styles/styles.css">
+</head>
+<body>
+	<div class="content">
+		<h1 class="level">Variables</h1>
+		<h2>Description</h2>
+			<p>OH NO! Karel's beepers have been scattered again! 
+			<a href="data/images/level_5-begin3.png"><img src="data/images/level_5-begin3.png"></a>
+			<p>This time we need to place the cleaned up beepers into a pile on (1, 1)</p>
+			<a href="data/images/level_5-end2.png"><img src="data/images/level_5-end2.png"></a>
+		<h2>Counting with Variables</h2>
+		<p>A <strong>variable</strong> is a <em>named</em> bucket that holds one <em>piece of information</em>. The information is always of a particular <strong>type</strong>.</p>
+		<p>The most common <strong>type</strong> of variable is an <strong>integer</strong>. Integers are numbers without decimal places. They are perfect for counting.</p>
+		<pre>  // declare a variable and store a number
+  int x = 3;</pre>
+  	<pre>  // store the result of a calculation
+  int x = 4 + 5 * 2; 
+  // x should now be 14</pre>
+  <pre>  // the type only needs to be used the first time
+  int x = 4;
+  x = 5;</pre>
+  
+  <pre>  // you can print numbers to the console
+  int x = 4;
+  println(x);
+  println(37);
+
+  // you can combine numbers and text in the output
+  println("The number x is " + x);</pre>
+
+  <p>One of the most common operations you can perform on an <strong>integer</strong> is adding one to the current value. This is called <strong>incrementing</strong>.</p>
+  <pre>  // declare x
+  int x = 0;
+
+  // increment x
+  x = x + 1;
+  // x is now one
+
+  // another way to increment (shorter sytax, same operation)
+  x++;
+  // x is now 2
+
+  // the opposite of incrementing is called decrementing
+  x = x - 1;
+  // x is now 1</pre>
+  <h2>Using Variables With Loops</h2>
+  <p>Sometimes you want to have code repeat an exact number of times. You can use an integer and a while loop to accomplish this.</p>
+  <pre>  // move exactly thirteen times 
+  void moveThirteen() {
+    int i = 0
+    while (i < 13) {
+      move();
+      i++;
+    }
+  }
+
+  // another way, counting down
+  void moveThirteenAlso() {
+    int numMoves = 13;
+    while (numMoves > 0) {
+      move();
+      numMoves--;
+    }
+
+  }</pre>
+
+  <h2>Functions and Variables as Inputs</h2>
+  <p>Functions can be made more useful by giving them input variables, called <strong>parameters</strong>. Parameters allow your functions to do different things based on the input, such as repeat a block of code a given number of times.</p>
+  <pre>  // move n times
+  void moveAlong(int n) {
+    while (n > 0) {
+      move();
+      n--;
+    }
+  }</pre>
+  <p>To use a function that has <strong>parameters</strong> you must feed it specific info for each parameter. These specific data (numbers in this case) are called arguments. Using different arguments throughout your code allows you to reuse functions and still have them do different things.</p>
+  <pre>  // using the previously declared moveAlong function
+  moveAlong(3); // three is the argument, and how many times it moves
+  moveAlong(7); // this time the argument is 7
+  int anInteger = 6;
+  moveAlong(anIteger * 3) // move 18 times
+  </pre>
+</body>
+</html>
